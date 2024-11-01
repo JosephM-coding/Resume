@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            margin: 0;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .Large-container {
+            margin-top: 200px;
+            margin-bottom: 200px;
+            width: 900px;
+            height: 1100px;
+            box-shadow: 20px 40px darkgray;
+        }
+        /* Simple Resume */
+        .F-box {
+            display: flex;
+            background-color: white;
+            padding: 10px;
+        }
+        .F-box > div {
+            /* padding: 10px; */
+        }
+        .align {
+            text-align: center;
+        }
+        .Color{ 
+            color: darkgrey
+        }
+        .ColorI {
+            color: lightgray;
+        }
+        .No_overflow {
+            list-style-type: none;
+            display: grid;
+            grid-template-rows: auto;
+        }
+        .No_overflow > li {
+
+        }
+        .h1 {
+            font-size: 40px;
+        }
+        /* Simple Resume */
+        @media (max-width: 415px) {
+            .Large-container {
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Large-container">
+        <div class="F-box">
+            <div>
+                <div class="align">
+                    <h1 class="h1">Name</h1>
+                    <h3 class="Color">Job</h3>
+                    <h3 class="Color">Smths</h3>
+                    </div>
+                    <div>
+                        <h2>Summary</h2>
+                        <hr>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem corrupti sit provident, earum voluptate placeat tempora reiciendis iste impedit, ipsa doloribus inventore illum quo fuga quae voluptatem natus at maxime dolores magnam quidem incidunt. Harum ratione numquam, accusantium beatae nihil rem quia odio adpraesentium fugiat consequuntur minima! Temporibus!</p>
+                </div>
+                <div>
+                    <h2>Experience</h2>
+                    <hr>
+                    <p><b>Job Type - Company Name</b></p>
+                    <p><i>Date</i></p>
+                    <ul>
+                        <li>This</li>
+                        <li>That</li>
+                        <li>And also this</li>
+                    </ul>
+                    <p><b>Job Type - Company Name</b></p>
+                    <p><i>Date</i></p>
+                    <ul>
+                        <li>This</li>
+                        <li>That</li>
+                        <li>And also this</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Education</h2>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, a.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                    <h2>Skills</h2>
+                    <hr>
+                    <ul class="No_overflow">
+                        <li>Who</li>
+                        <li>What</li>
+                        <li>When</li>
+                        <li>Where</li>
+                        <li>Why</li>
+                        <li>Who</li>
+                        <li>What</li>
+                        <li>When</li>
+                        <li>Where</li>
+                        <li>Why</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
